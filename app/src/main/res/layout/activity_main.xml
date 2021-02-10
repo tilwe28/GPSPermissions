@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Latitude"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/textView_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Longitude"
+        app:layout_constraintEnd_toEndOf="@+id/textView_latitude"
+        app:layout_constraintStart_toStartOf="@+id/textView_latitude"
+        app:layout_constraintTop_toBottomOf="@+id/textView_latitude" />
+
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Address"
+        app:layout_constraintBottom_toTopOf="@+id/textView_latitude"
+        app:layout_constraintEnd_toEndOf="@+id/textView_latitude"
+        app:layout_constraintStart_toStartOf="@+id/textView_latitude" />
+
+    <TextView
+        android:id="@+id/textView_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Distance"
+        app:layout_constraintEnd_toEndOf="@+id/textView_longitude"
+        app:layout_constraintStart_toStartOf="@+id/textView_longitude"
+        app:layout_constraintTop_toBottomOf="@+id/textView_longitude" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Time"
+        app:layout_constraintEnd_toEndOf="@+id/textView_totalDistance"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/textView_totalDistance"
+        app:layout_constraintTop_toBottomOf="@+id/textView_totalDistance" />
+
+    <TextView
+        android:id="@+id/textView_totalDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Distance"
+        app:layout_constraintEnd_toEndOf="@+id/textView_distance"
+        app:layout_constraintStart_toStartOf="@+id/textView_distance"
+        app:layout_constraintTop_toBottomOf="@+id/textView_distance" />
+
+    <TextView
+        android:id="@+id/textView_totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Time"
+        app:layout_constraintEnd_toEndOf="@+id/textView_time"
+        app:layout_constraintStart_toStartOf="@+id/textView_time"
+        app:layout_constraintTop_toBottomOf="@+id/textView_time" />
+</androidx.constraintlayout.widget.ConstraintLayout>
